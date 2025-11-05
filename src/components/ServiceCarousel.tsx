@@ -24,7 +24,7 @@ const ServiceCarousel = ({ title, services }: ServiceCarouselProps) => {
     const message = encodeURIComponent(
       `Olá, quero agendar uma avaliação de ${serviceName} na OdontoCompany Amparo.`
     );
-    window.open(`https://wa.me/551999992-3050?text=${message}`, "_blank");
+    window.open(`https://wa.me/5519999923050?text=${message}`, "_blank");
   };
 
   return (

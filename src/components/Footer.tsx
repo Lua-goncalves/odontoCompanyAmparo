@@ -38,7 +38,7 @@ const Footer = () => {
             <h4 className="text-xl font-semibold mb-4">Redes Sociais</h4>
             <div className="flex gap-4">
               <a
-                href="https://wa.me/551999992-3050"
+                href="https://wa.me/5519999923050"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 flex items-center justify-center transition-colors"

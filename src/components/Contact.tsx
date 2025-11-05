@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/551999992-3050", "_blank");
+    window.open("https://wa.me/5519999923050", "_blank");
   };
 
   const handleInstagramClick = () => {
