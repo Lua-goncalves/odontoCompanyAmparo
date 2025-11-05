@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 160 80% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 80% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 80% 15%;
+
+    /* Verde escuro principal */
+    --primary: 160 80% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Verde claro vibrante */
+    --secondary: 160 70% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 160 30% 96%;
+    --muted-foreground: 160 20% 40%;
+
+    --accent: 160 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 160 20% 90%;
+    --input: 160 20% 90%;
+    --ring: 160 70% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradientes personalizados */
+    --gradient-hero: linear-gradient(135deg, hsl(160 80% 25%) 0%, hsl(160 70% 45%) 100%);
+    --gradient-overlay: linear-gradient(180deg, hsl(160 80% 25% / 0.95) 0%, hsl(160 70% 45% / 0.9) 100%);
+    
+    /* Sombras elegantes */
+    --shadow-soft: 0 2px 20px hsl(160 80% 25% / 0.08);
+    --shadow-hover: 0 8px 30px hsl(160 80% 25% / 0.15);
+    
+    /* Transições suaves */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 160 80% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 160 50% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 160 50% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 160 70% 45%;
+    --primary-foreground: 160 80% 10%;
+
+    --secondary: 160 50% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 160 50% 15%;
+    --muted-foreground: 160 30% 70%;
+
+    --accent: 160 70% 45%;
+    --accent-foreground: 160 80% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 40% 20%;
+    --input: 160 40% 20%;
+    --ring: 160 70% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
